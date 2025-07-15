@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Job Search Workbook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .nav-link.active {
+            color: #3b82f6; /* blue-500 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-blue-600">Job Search Workbook</h1>
+            <nav class="hidden md:flex space-x-6 text-gray-600">
+                <a href="#intro" class="hover:text-blue-500 nav-link">Introduction</a>
+                <a href="#chapter1" class="hover:text-blue-500 nav-link">Chapter 1</a>
+                <a href="#chapter2" class="hover:text-blue-500 nav-link">Chapter 2</a>
+                <a href="#chapter3" class="hover:text-blue-500 nav-link">Chapter 3</a>
+                <a href="#chapter4" class="hover:text-blue-500 nav-link">Chapter 4</a>
+                <a href="#chapter5" class="hover:text-blue-500 nav-link">Chapter 5</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#intro" class="block py-2 px-6 text-gray-600 hover:bg-gray-100 nav-link">Introduction</a>
+            <a href="#chapter1" class="block py-2 px-6 text-gray-600 hover:bg-gray-100 nav-link">Chapter 1</a>
+            <a href="#chapter2" class="block py-2 px-6 text-gray-600 hover:bg-gray-100 nav-link">Chapter 2</a>
+            <a href="#chapter3" class="block py-2 px-6 text-gray-600 hover:bg-gray-100 nav-link">Chapter 3</a>
+            <a href="#chapter4" class="block py-2 px-6 text-gray-600 hover:bg-gray-100 nav-link">Chapter 4</a>
+            <a href="#chapter5" class="block py-2 px-6 text-gray-600 hover:bg-gray-100 nav-link">Chapter 5</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Introduction -->
+        <section id="intro" class="mb-16 scroll-mt-24">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Navigating Online Job Boards: Indeed, Snagajob, & CalJOBS for Beginners</h2>
+                <p class="text-lg text-gray-600 mb-4">Welcome! This guide is designed for students and job seekers with little or no work experience. In today's world, most job hunting happens online. This workbook will walk you step-by-step through the process, from understanding your skills to applying confidently on major platforms.</p>
+                <p class="text-gray-600">By the end of this guide, you will have the tools and knowledge to navigate the digital job market, find suitable entry-level positions, and take your first exciting steps into the world of work. Let's get started!</p>
+            </div>
+        </section>
+
+        <!-- Chapter 1 -->
+        <section id="chapter1" class="mb-16 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-6"><span class="text-blue-600">Chapter 1:</span> Getting Ready for Your Online Job Search</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Understanding Yourself: Skills, Interests, and Job Types</h3>
+                    <p class="text-gray-600 mb-4">The first step is to think about yourself. What are you good at? What do you enjoy? Even without a formal job, you've developed skills through school, hobbies, and daily life. These can be <strong class="font-semibold text-gray-800">hard skills</strong> (like using software) or <strong class="font-semibold text-gray-800">soft skills</strong> (like teamwork and communication).</p>
+                    <h4 class="text-xl font-semibold mb-2">Essential Information You'll Need</h4>
+                    <p class="text-gray-600 mb-4">Gathering this information beforehand will save you time. Prepare your contact info, education history, work history (if any), and references.</p>
+                    <div class="bg-blue-50 border border-blue-200 p-4 rounded-lg">
+                        <p class="font-semibold text-blue-800"><i class="fas fa-info-circle mr-2"></i>Always ask for permission before listing someone as a reference!</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700"><i class="fas fa-pencil-alt mr-2"></i>Activity 1.1: My Job Search Keywords</h3>
+                    <p class="text-gray-600 mb-6">Create a personal list of keywords to use when searching for jobs online.</p>
+                    <div class="space-y-4">
+                        <div>
+                            <label for="skills" class="block text-lg font-medium text-gray-700">My Skills (What I'm good at)</label>
+                            <input type="text" id="skills" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="e.g., Communication, teamwork, problem-solving...">
+                        </div>
+                        <div>
+                            <label for="interests" class="block text-lg font-medium text-gray-700">My Interests (What I enjoy doing)</label>
+                            <input type="text" id="interests" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="e.g., Working with people, using computers...">
+                        </div>
+                        <div>
+                            <label for="keywords" class="block text-lg font-medium text-gray-700">My Master Keyword List</label>
+                            <textarea id="keywords" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="e.g., Cashier, retail associate, office assistant..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 2 -->
+        <section id="chapter2" class="mb-16 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-6"><span class="text-blue-600">Chapter 2:</span> Introduction to Indeed.com</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Creating Your Basic Indeed Profile</h3>
+                    <p class="text-gray-600 mb-4">Indeed.com is a massive library of job postings. Creating a profile makes applying much easier. Your profile acts like a mini-resume that Indeed can use to pre-fill applications.</p>
+                    <h4 class="text-xl font-semibold mb-2">Conducting a Targeted Job Search</h4>
+                    <p class="text-gray-600 mb-4">Use the "What" and "Where" search bars. Use your keywords in "What" and your city in "Where". After searching, use <strong class="font-semibold text-gray-800">filters</strong> like "Date Posted," "Job Type," and "Experience Level" to narrow your results.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                     <h3 class="text-2xl font-semibold mb-4 text-blue-700"><i class="fas fa-tasks mr-2"></i>Activity 2.1: Indeed Profile Builder Checklist</h3>
+                     <p class="text-gray-600 mb-6">Follow these steps to create or update your Indeed profile.</p>
+                     <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input id="check1" type="checkbox" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="check1" class="ml-3 text-gray-700">Register with a professional email address.</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="check2" type="checkbox" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="check2" class="ml-3 text-gray-700">Verify your contact information is correct.</label>
+                        </div>
+                         <div class="flex items-center">
+                            <input id="check3" type="checkbox" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="check3" class="ml-3 text-gray-700">Add your education history.</label>
+                        </div>
+                         <div class="flex items-center">
+                            <input id="check4" type="checkbox" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="check4" class="ml-3 text-gray-700">Add at least 5-7 skills from your keyword list.</label>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 3 -->
+        <section id="chapter3" class="mb-16 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-6"><span class="text-blue-600">Chapter 3:</span> Exploring Snagajob.com</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Your Go-To for Hourly Jobs</h3>
+                <p class="text-gray-600 mb-4">Snagajob.com specializes in hourly and part-time jobs, making it excellent for students. Jobs in retail, food service, and hospitality are frequently posted here.</p>
+                <h4 class="text-xl font-semibold mb-2">Setting Up Your Profile</h4>
+                <p class="text-gray-600 mb-4">When building your profile, the <strong class="font-semibold text-gray-800">"Availability"</strong> section is crucial for hourly jobs. Be realistic about your school schedule. Employers rely heavily on this information.</p>
+                <div class="bg-green-50 border border-green-200 p-4 rounded-lg mt-6">
+                    <p class="font-semibold text-green-800"><i class="fas fa-lightbulb mr-2"></i>For the "Work Experience" section, include volunteer work, extracurricular activities, and informal jobs like babysitting or yard work.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 4 -->
+        <section id="chapter4" class="mb-16 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-6"><span class="text-blue-600">Chapter 4:</span> Using CalJOBS for California Opportunities</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">California's Official Job Board</h3>
+                <p class="text-gray-600 mb-4">CalJOBS is operated by the Employment Development Department (EDD) and focuses on connecting California job seekers with employers across the state. It's a great way to find local opportunities and explore career resources unique to California.</p>
+                <h4 class="text-xl font-semibold mb-2">Utilizing CalJOBS Resources</h4>
+                <p class="text-gray-600 mb-4">CalJOBS is more than a job board. It connects you to your local <strong class="font-semibold text-gray-800">America's Job Center of California (AJCC)</strong>, which offers free workshops, career counseling, and information on training programs.</p>
+            </div>
+        </section>
+
+        <!-- Chapter 5 -->
+        <section id="chapter5" class="mb-16 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-6"><span class="text-blue-600">Chapter 5:</span> Crafting Your Application & Next Steps</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Making Your Application Stand Out</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li><strong class="font-semibold text-gray-800">Read Instructions Carefully:</strong> Failing to follow instructions can get your application discarded.</li>
+                        <li><strong class="font-semibold text-gray-800">Tailor Your Responses:</strong> Use keywords from the job description.</li>
+                        <li><strong class="font-semibold text-gray-800">Proofread Everything:</strong> Typos and grammatical errors look careless.</li>
+                        <li><strong class="font-semibold text-gray-800">Be Honest:</strong> Never make up experience. Highlight transferable skills instead.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Following Up on Your Application</h3>
+                    <p class="text-gray-600 mb-4">Following up shows continued interest. If the job posting doesn't say "no calls," it's appropriate to send a polite follow-up email about one week after you apply.</p>
+                    <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-lg">
+                        <h4 class="font-semibold text-yellow-800 text-lg mb-2"><i class="fas fa-envelope mr-2"></i>Example Follow-Up Email Snippet</h4>
+                        <p class="text-gray-700 italic">"Dear [Hiring Manager Name],<br>I hope this email finds you well. I am writing to follow up on my application for the [Job Title] position, which I submitted on [Date]. I am very enthusiastic about this opportunity... Thank you for your time and consideration."</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700"><i class="fas fa-check-double mr-2"></i>Activity 5.2: Job Application Checklist</h3>
+                     <p class="text-gray-600 mb-6">Before you click "submit," run through this final checklist.</p>
+                     <div class="space-y-3">
+                        <div class="flex items-start">
+                            <input id="final-check1" type="checkbox" class="h-5 w-5 mt-1 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="final-check1" class="ml-3 text-gray-700">Have I read all instructions and tailored my responses to this specific job?</label>
+                        </div>
+                        <div class="flex items-start">
+                            <input id="final-check2" type="checkbox" class="h-5 w-5 mt-1 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="final-check2" class="ml-3 text-gray-700">Is all my contact information correct and have I filled in all required fields?</label>
+                        </div>
+                         <div class="flex items-start">
+                            <input id="final-check3" type="checkbox" class="h-5 w-5 mt-1 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="final-check3" class="ml-3 text-gray-700">Have I proofread everything for typos and grammatical errors?</label>
+                        </div>
+                         <div class="flex items-start">
+                            <input id="final-check4" type="checkbox" class="h-5 w-5 mt-1 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="final-check4" class="ml-3 text-gray-700">If I attached a resume, is it the correct and most updated version?</label>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2024 Job Search Workbook. Your journey to a new job starts here!</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle and active nav link highlighting
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            // Toggle mobile menu
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when a link is clicked
+            mobileMenu.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A') {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+            // Intersection Observer for active nav link highlighting
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.4 
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
